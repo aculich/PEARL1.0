@@ -12,11 +12,11 @@ To use these data, I need to use `R` to convert the data to `GeoTIFF` first, and
 
 -[x] check out how colors work :
 	To change the colors with rgb values, change the color list into rgb values with space inbetween the triplets (ex. '230 34 145')
-
--[] find different colors to use for the maps
--[] Oliver: update HTML to use 18 future projections
--[] Honey: move 18future projects into **static/data/pearl-tiles/**
--[] Honey: push updated tile data to *dev branch* - e.g. **git push origin dev**
+<br>
+-[ ] find different colors to use for the maps <br>
+-[ ] Oliver: update HTML to use 18 future projections <br>
+-[ ] Honey: move 18future projects into **static/data/pearl-tiles/** <br>
+-[ ] Honey: push updated tile data to *dev branch* - e.g. **git push origin dev**
 
 
 ## 1 Installation
