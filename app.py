@@ -273,4 +273,4 @@ def show_results():
     return render_template("show_results.html")
 
 if __name__ == "__main__":
-    app.run(port = 5555, debug = True, use_reloader = True)
+    app.run(port = 5551, debug = True, use_reloader = True)
