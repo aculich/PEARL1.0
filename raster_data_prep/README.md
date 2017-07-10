@@ -44,8 +44,8 @@ Then, install `rpy2` for `R` connection in `python`:
 To install `R`, go to this [link](https://www.r-project.org/). When `R` is installed, in R, type:
 
 ```R
-  install.package('raster')
-  install.package('rgdal')
+  install.packages('raster')
+  install.packages('rgdal')
 ```
 
 ### 1.2 Ubuntu (*or other OS using apt-get*)
@@ -56,9 +56,27 @@ This is a dev installation for Ubuntu:
 
 ```bash
 
-  sudo apt-get install gdal python-gdal
+	sudo add-apt-repository ppa:ubuntugis/ppa && sudo apt-get update
+	sudo apt-get install gdal-bin
 
 ```
+
+To verify installation of gdal:
+
+```bash
+
+	ogrinfo
+
+```
+
+```bash
+
+	sudo apt-get install libgdal1-dev 
+  sudo apt-get install python-gdal
+
+```
+
+**Note:** you may need to add the **-H** flag (after *sudo*) to set the security policy for the installing package. The **-H (HOME)** flag will set the HOME environment variable to the home dir.
 
 Then, install `rpy2` for `R` connection in `python`:
 
@@ -66,11 +84,19 @@ Then, install `rpy2` for `R` connection in `python`:
   pip install rpy2
 ```
 
-To install `R`, go to this [link](https://www.r-project.org/). When `R` is installed, in R, type:
+To install `R`, go to this [link](https://www.r-project.org/).
+
+Start a root R session command line:
+
+```bash
+  sudo -i R
+```
+
+When `R` is installed, in R, type:
 
 ```R
-  install.package('raster')
-  install.package('rgdal')
+  install.packages('raster')
+  install.packages('rgdal')
 ```
 
 ## 2 Create tile maps
