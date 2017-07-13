@@ -7,7 +7,7 @@ import os
 import csv
 import errno
 import json
-import psycopg2 as psy
+## import psycopg2 as psy
 from functools import wraps
 ## from ewaim import calculate
 ## from ewaim import get_csv
@@ -273,4 +273,5 @@ def show_results():
     return render_template("show_results.html")
 
 if __name__ == "__main__":
-    app.run(port = 5051, debug = True, use_reloader = True)
+    ## app.run(port = 5051, debug = True, use_reloader = True)
+    app.run(host='0.0.0.0', port=5051)
