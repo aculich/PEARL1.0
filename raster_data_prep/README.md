@@ -112,3 +112,7 @@ Once the script is finished, the tile maps are in `/pearl_data/tile_maps/`, you 
 # Please Note!
 
 Although this script runs in parallel, the running time is still every long because of the tile map creation. The `gdal` package might cause various problems.
+
+## Error Notice
+Some of the species folders in the origin has missing .grd or .gri files.
+Implemented try and except function to filter out erroneous folders in raster_translation_18proj.py
